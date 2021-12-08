@@ -1,4 +1,6 @@
-ipykernel   # 노트북에서 conda 환경 지정 목록에 표시되게 하기위해 필요
 numpy       # Data Science 에서 텐서 처리 필수/핵심 라이브러리
 pillow      # 컴퓨터 비전분야의 사진 처리 필수/핵심 라이브러리
 ipywidgets  # 노트북에서 버튼, HTML 등의 UI 컴포넌트를 표시하기 위해 필요
+ipykernel   # 노트북에서 conda 환경 지정 목록에 표시되게 하기위해 필요
+imageio     # 동영상의 프레임을 로드하기 위해 필요
+imageio-ffmpeg # 동영상 처리 엔진으로 ffmpeg를 활용하기 위해 필요 
