@@ -37,7 +37,7 @@ import time
 def get_step():
     return get_step_()
         
-def game_roop():
+def game_loop():
     mf = my_fighter.copy()
     
     bs = []
@@ -127,6 +127,11 @@ def game_roop():
         
         time.sleep(0.03)
         ipd.clear_output(wait=True)
-while True:
-    game_roop()
-    time.sleep(5)
+        
+def start():
+    while True:
+        try:
+            game_loop()
+        except:
+            break
+        time.sleep(5)
