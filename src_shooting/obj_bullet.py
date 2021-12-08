@@ -45,14 +45,15 @@ def make_bullet(x, stage):
     
     return bullet
 
-def make_bullet_e(xy):
+def make_bullet_e(xy, step):
     bullet = np.zeros((SY, SX, 3), np.uint8)
-    color = np.array([100, 0, 100])
+    color = np.array([120, 0, 120])
+        
     x, y = xy
     bullet[y+45:y+50, x-1:x+1] = color*2
     bullet[y+40:y+45, x-3:x+3] = color
     bullet[y+35:y+40, x-4:x+4] = color/2
-    bullet[y+30:y+35, x-5:x+5] = color/4
+    bullet[y+30:y+35, x-6:x+6] = color/3
     return bullet
     
 

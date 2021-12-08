@@ -68,7 +68,7 @@ def game_loop():
                 enemy = random.choice(es)
                 
                 loc = get_loc(enemy)
-                b = make_bullet_e(loc[::-1])
+                b = make_bullet_e(loc[::-1], step)
                 bs_e.append(b)
             
         step  = get_step()
